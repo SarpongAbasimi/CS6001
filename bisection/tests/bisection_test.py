@@ -14,6 +14,7 @@ class TestBisection(object):
   def test_Bisection_properties(self, bisection):
     assert bisection.low == 0
     assert bisection.high == 10
+    assert bisection.num_of_guess == 0
     assert bisection.answer == (bisection.low + bisection.high)/ 2
   
   def test_guess(self, bisection):
@@ -28,3 +29,6 @@ class TestBisection(object):
     bisection.guess(5)
     output = capsys.readouterr()
     assert output.out == f'your number was {bisection.answer}\n'
+    assert bisection.num_of_guess == 1
+  
+  
