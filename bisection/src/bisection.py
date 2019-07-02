@@ -12,20 +12,19 @@ class Bisection():
       if self.answer == number:
         return self.perfect_guess(number)
         break
-      if self.answer < number:
-        self.low = self.answer
-      else: 
-        self.high = self. answer
+      self.less(number) if self.answer < number else self.more(number)
       self.answer = (self.low + self.high)/ 2
-
       self.num_of_guess += 1
+      
       print(f'low = {self.low}, high= {self.high}, answer= {self.answer}, num_guess= {self.num_of_guess} ')
   
   def perfect_guess(self, number):
     print(f'your number was {self.answer}')
     self.num_of_guess += 1
     return number
-
-
-bisection = Bisection()
-bisection.guess(4)
+  
+  def less(self, number):
+    self.low = self.answer
+  
+  def more(self, number):
+    self.high = self. answer

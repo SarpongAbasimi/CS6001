@@ -19,8 +19,7 @@ class TestBisection(object):
   
   def test_guess(self, bisection):
     number = 5
-    print(bisection.answer)
-    assert bisection.guess(number) == 5
+    assert bisection.guess(number) == bisection.answer
   
   def test_guess_returns_list_if_passed_string(self, bisection):
     number = 's'
