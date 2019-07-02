@@ -18,7 +18,7 @@ class TestBisection(object):
     assert bisection.answer == (bisection.low + bisection.high)/ 2
   
   def test_guess(self, bisection):
-    number = 5
+    number = 6
     assert bisection.guess(number) == bisection.answer
   
   def test_guess_returns_list_if_passed_string(self, bisection):

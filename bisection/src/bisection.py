@@ -1,7 +1,7 @@
 class Bisection():
-  def __init__(self):
+  def __init__(self, high=10):
     self.low = 0 
-    self.high = 10
+    self.high = high
     self.num_of_guess = 0
     self.answer = (self.low + self.high)/ 2
 
