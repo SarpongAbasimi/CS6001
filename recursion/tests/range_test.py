@@ -23,4 +23,15 @@ class TestRange(object):
     new_range.range_(5)
     out = capsys.readouterr()
     assert out.out == '5\n4\n3\n2\n1\n'
-
+  
+  def test_fib_one(self, new_range):
+    assert new_range.fib(1)  == 1
+  
+  def test_fib_three(self, new_range):
+    assert new_range.fib(3) == 2
+  
+  def test_fib_ten(self, new_range):
+    assert new_range.fib(8) == 21
+  
+  def test_fib_15(self, new_range):
+    assert new_range.fib(15) == 610
