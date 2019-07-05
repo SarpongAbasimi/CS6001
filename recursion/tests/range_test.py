@@ -35,3 +35,6 @@ class TestRange(object):
   
   def test_fib_15(self, new_range):
     assert new_range.fib(15) == 610
+
+  def test_factorail(self, new_range):
+    assert new_range.factorial(1) == 1

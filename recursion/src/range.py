@@ -14,3 +14,7 @@ class Range():
       return 1
     else:
       return(self.fib(user_input - 1) + self.fib(user_input - 2))
+  
+  def factorial(self, number):
+    if number is 1:
+      return number
