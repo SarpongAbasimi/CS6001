@@ -44,3 +44,6 @@ class TestRange(object):
   
   def test_factorail_of_four(self, new_range):
     assert new_range.factorial(4) == 24
+  
+  def test_factorail_of_four(self, new_range):
+    assert new_range.factorial(5) == 120
