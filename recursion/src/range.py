@@ -18,3 +18,5 @@ class Range():
   def factorial(self, number):
     if number is 1:
       return number
+    else:
+      return number * self.factorial(number - 1)

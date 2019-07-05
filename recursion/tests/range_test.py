@@ -38,3 +38,7 @@ class TestRange(object):
 
   def test_factorail(self, new_range):
     assert new_range.factorial(1) == 1
+  
+  def test_factorail_of_two(self, new_range):
+    assert new_range.factorial(2) == 2
+  
